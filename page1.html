@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+      @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i');
+
+
+      :root{
+        --bg: #97e7ac;
+        --title: #3d7f46;
+        --para-text: rgba(0,0,0,0.67);
+        --title-font: 'Josefin Slab', serif;
+        --text-font: 'PT Serif', Serif;
+        --width: 20em;
+      }
+      body{
+        background: var(--bg);
+        display: grid;
+        place-items: center;
+      }
+
+      h1, h2, h3, h4, h5, h6{
+        color: var(--title);
+        text-transform: capitalize;
+        font-family: var(--title-font);
+      }
+
+      ul{  
+        padding-left: 0;
+        background:black;  
+        font-family:Arial, sans serif;  
+        font-size:12px;  
+        text-transform:uppercase;
+      }
+
+      li{  
+        display:inline-block;
+      }
+
+      a{  
+        display:block;  
+        padding:10px;  
+        color:white;  
+        text-decoration:none;
+      }
+
+      section,
+      aside,
+      article,
+      div,
+      img{
+        box-sizing: border-box;
+      }
+      section img{
+        width: 100%;
+      }
+      section{
+        width: 80%;
+        background: #fff;
+        padding: 20px;
+      }
+      section h3{
+        font-size: calc(var(--width)/10);
+      }
+      section p{
+        font-family: var(--text-font);
+        color: var(--para-text);
+        font-size: calc(var(--width)/20);
+      }
+      .date{
+        font-size: calc(var(--width)/25);
+      }
+      h1{
+        color: #fff;
+      }
+
+      section a{
+        text-decoration: none;
+        color: var(--bg);
+        font-family: var(--title-font);
+        font-weight: 700;
+        font-size: calc(var(--width)/23);
+      }
+    </style>
+    <script>
+      function toggleWord(wordId) {
+        var word = document.getElementById(wordId);
+        if (word.innerHTML === word.getAttribute("data-word")) {
+          word.innerHTML = "____";
+        } else {
+          word.innerHTML = word.getAttribute("data-word");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="./page1.html">page1</a></li>
+      <li><a href="./page2.html">page2</a></li>
+      <li><a href="./page3.html">page3</a></li>
+      <li><a href="./page4.html">page4</a></li>
+      <li><a href="./page5.html">page5</a></li>
+    </ul>
+    <section>
+      <p>
+        ddddd: 1 выборы -> <b><span id="1" data-word="комунисты" onclick="toggleWord('1')">____</span></b> -> 1947 -> <b><span id="2" data-word="17%" onclick="toggleWord('2')">____</span></b> -> 1949 -> <b><span id="3" data-word="большенство" onclick="toggleWord('3')">____</span></b>
+      </p>
+    </section>
+  </body>
+</html>

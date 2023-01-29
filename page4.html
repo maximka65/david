@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css"></link>
+    <script>
+      function toggleWord(wordId) {
+        var word = document.getElementById(wordId);
+        if (word.innerHTML === word.getAttribute("data-word")) {
+          word.innerHTML = "____";
+        } else {
+          word.innerHTML = word.getAttribute("data-word");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="./page1.html">page1</a></li>
+      <li><a href="./page2.html">page2</a></li>
+      <li><a href="./page3.html">page3</a></li>
+      <li><a href="./page4.html">page4</a></li>
+    </ul>
+    <section>
+      <h3>Natural beauty. which is grateful in Bangladesh.</h3>
+      <p class="date">12th December, 2018</p>
+      <p>
+      The quick brown fox jumps over the --><b><span id="word3" data-word="hidden" onclick="toggleWord('word3')">____</span></b> dog.
+      </p>
+    </section>
+  </body>
+</html>

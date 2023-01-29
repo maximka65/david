@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css"></link>
+    <script>
+      function toggleWord(wordId) {
+        var word = document.getElementById(wordId);
+        if (word.innerHTML === word.getAttribute("data-word")) {
+          word.innerHTML = "____";
+        } else {
+          word.innerHTML = word.getAttribute("data-word");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="./page1.html">page1</a></li>
+      <li><a href="./page2.html">page2</a></li>
+      <li><a href="./page3.html">page3</a></li>
+      <li><a href="./page4.html">page4</a></li>
+    </ul>
+    <section>
+      <h3>Natural beauty. which is grateful in Bangladesh.</h3>
+      <p class="date">12th December, 2018</p>
+      <p>The quick brown fox jumps over the lazy dog. But what if the quick brown fox had a --><b><span id="word1" data-word="secret" onclick="toggleWord('word1')">____</span></b>?</p>
+      <p>
+      The quick brown fox jumps over the --><b><span id="word2" data-word="mystery" onclick="toggleWord('word2')">____</span></b> dog.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae provident incidunt quaerat non expedita? Magnam, ex. Mollitia, qui! Tenetur ea obcaecati officiis optio cumque consequuntur, incidunt eos! Ab labore aut ratione sint expedita blanditiis deserunt molestias sunt cumque sequi facere, fugiat doloribus commodi nesciunt nihil! Numquam cumque recusandae praesentium natus totam, blanditiis cum ipsam a consequatur nihil deserunt commodi fuga quia velit quidem amet quae fugiat fugit magnam? Cupiditate unde minus rerum at placeat beatae debitis reprehenderit fugit sapiente quas tenetur iste molestias hic ea ex, voluptatibus assumenda id repudiandae non nisi odit magni impedit. Expedita dicta et accusamus aperiam praesentium porro distinctio, maxime eum nihil totam! Accusantium sequi libero ratione, magni quaerat inventore itaque porro rerum voluptates dolor? Sit autem tenetur reiciendis! Accusantium rem nesciunt dolor. Beatae, culpa. Dolorem repellendus numquam quod fuga delectus. Tenetur debitis, iste vel quibusdam officiis, voluptates harum, illo eius rem atque similique. Accusamus, error.
+      </p>
+      <p>
+      The quick brown fox jumps over the --><b><span id="word3" data-word="hidden" onclick="toggleWord('word3')">____</span></b> dog.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, animi quos iusto quisquam expedita cumque provident id ea inventore numquam non voluptatum! Nulla vero labore iusto maiores provident neque eveniet fugit enim quisquam quaerat, magni non facere temporibus accusantium dolores nisi eum mollitia officiis laboriosam ad velit? Enim quam possimus eveniet ipsum, consequuntur doloribus consectetur voluptatibus qui esse blanditiis assumenda earum voluptates nisi ratione molestias perferendis beatae fuga quo incidunt et delectus corrupti nostrum? Corporis nobis voluptas ipsa eum debitis magnam ipsum iste officiis rerum reprehenderit hic porro, iusto nostrum! Illo ducimus optio odio voluptas alias ab labore corporis id.
+      </p>
+    </section>
+  </body>
+</html>
